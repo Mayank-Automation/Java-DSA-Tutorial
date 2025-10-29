@@ -1,0 +1,21 @@
+package staticExample;
+
+public class Human {
+
+    // Static variables are independent of object
+    int age;
+    String name;
+    int salary;
+    boolean married;
+    static long population;
+
+    public Human(int age, String name, int salary, boolean married) {
+        this.age = age;
+        this.name = name;
+        this.salary = salary;
+        this.married = married;
+        Human.population+= 1;
+    }
+
+
+}
